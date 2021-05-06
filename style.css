@@ -1,0 +1,49 @@
+h1 {
+    text-align: center;
+}
+
+#game {
+    width: 600px;
+    height: 300px;
+    border: 2px solid black;
+    margin: auto;
+    background-image: url("https://image.freepik.com/free-vector/space-game-background-with-landscape-planet_107791-1700.jpg");
+    background-size: cover; /*resize the image to fit the div game*/
+}
+
+#dino {
+    height: 75px;
+    width: 100px;
+    position: relative;
+    top: 225px;
+    left: 100px;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fcdn2.scratch.mit.edu%2Fget_image%2Fgallery%2F188159_200x130.png%3Fv%3D1367965643.0&f=1&nofb=1");
+    background-size: cover;
+}
+
+#rock {
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 175px;
+    left: 550px;;
+    background-image: url("https://lh3.googleusercontent.com/proxy/fhaZqCOfAriGGA4LXOmfkIXfvo8Oayo4bRzFiRgL6EXgHER0QPAXHSwS5z23HvOuCicHfJbqQdtxsVlyI4jAMGjiepjQXXrF");
+    background-size: cover;
+    animation: rock 1.33s infinite;
+}
+
+@keyframes rock {
+    0%{left: 550px;}
+    100%{left: -50px;}
+}
+
+.jump-animation {
+    animation: jump 0.5s;
+}
+
+@keyframes jump {
+    0%{top: 225px;}
+    50%{top: 75px;}
+    75%{top: 75px;}
+    100%{top: 225px;}
+}
